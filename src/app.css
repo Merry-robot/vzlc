@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+
+#body, html {
+    background: #414141;
+    @apply mt-auto;
+    @apply h-full;
+    @apply shadow-stone-800;
+    @apply shadow-xl;
+    @apply text-stone-400;
+}
