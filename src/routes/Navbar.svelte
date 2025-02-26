@@ -1,6 +1,22 @@
 <script>
-    // Import the image from the lib folder
     import logo from '../lib/images/logo.png';
+
+    
+    
+    // Use Vite's environment variable syntax
+    const clientId = import.meta.env.VITE_CLIENT_ID;
+    const redirectUri = import.meta.env.VITE_REDIRECT_URI;
+    const scopes = 'full_name email vatsim_details country';
+
+    if (!clientId || !redirectUri) {
+        throw new Error('Missing VITE_CLIENT_ID or VITE_REDIRECT_URI in environment variables');
+    }
+
+    const authUrl = `https://auth.vatsim.net/oauth/authorize?response_type=code&client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scopes)}`;
+
+    function login() {
+        window.location.href = authUrl;
+    }
 </script>
 
 <style>
@@ -21,6 +37,7 @@
         color: white;
         text-decoration: none;
         padding: 10px 15px;
+        cursor: pointer;
     }
 
     a:hover {
@@ -30,11 +47,11 @@
 </style>
 
 <nav>
-    <img src="{logo}" alt="Logo" />
+    <img src={logo} alt="Logo" />
     <div id="navtext" class="ml-auto">
         <a href="/">Home</a>
-        <a href="/feedback.svelte">Feedback</a>
-        <a href="/facility.svelte">Facility</a>
-        <a href="/login.svelte">Login</a>
+        <a href="/feedback">Feedback</a>
+        <a href="/facility">Facility</a>
+        <a href="#" on:click={login}>Login</a>
     </div>  
 </nav>
