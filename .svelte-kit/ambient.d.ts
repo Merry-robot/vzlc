@@ -26,8 +26,6 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const VATUSA_DEV_API_KEY: string;
-	export const VATUSA_API_KEY: string;
 	export const VITE_CLIENT_ID: string;
 	export const VITE_CLIENT_SECRET: string;
 	export const VITE_REDIRECT_URI: string;
@@ -136,8 +134,6 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		VATUSA_DEV_API_KEY: string;
-		VATUSA_API_KEY: string;
 		VITE_CLIENT_ID: string;
 		VITE_CLIENT_SECRET: string;
 		VITE_REDIRECT_URI: string;
