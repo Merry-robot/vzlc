@@ -30,7 +30,6 @@ declare module '$env/static/private' {
 	export const VITE_CLIENT_SECRET: string;
 	export const VITE_REDIRECT_URI: string;
 	export const SHELL: string;
-	export const npm_command: string;
 	export const SESSION_MANAGER: string;
 	export const COLORTERM: string;
 	export const XDG_CONFIG_DIRS: string;
@@ -49,6 +48,7 @@ declare module '$env/static/private' {
 	export const XDG_SESSION_DESKTOP: string;
 	export const LOGNAME: string;
 	export const XDG_SESSION_TYPE: string;
+	export const BUN_WHICH_IGNORE_CWD: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const _: string;
 	export const XAUTHORITY: string;
@@ -65,9 +65,9 @@ declare module '$env/static/private' {
 	export const XDG_SEAT_PATH: string;
 	export const INVOCATION_ID: string;
 	export const MANAGERPID: string;
+	export const INIT_CWD: string;
 	export const CHROME_DESKTOP: string;
 	export const KDE_SESSION_UID: string;
-	export const npm_lifecycle_script: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const XDG_SESSION_CLASS: string;
 	export const TERM: string;
@@ -78,7 +78,6 @@ declare module '$env/static/private' {
 	export const KDE_SESSION_VERSION: string;
 	export const PAM_KWALLET5_LOGIN: string;
 	export const DISPLAY: string;
-	export const npm_lifecycle_event: string;
 	export const SHLVL: string;
 	export const XDG_VTNR: string;
 	export const XDG_SESSION_ID: string;
@@ -102,7 +101,6 @@ declare module '$env/static/private' {
 	export const npm_node_execpath: string;
 	export const OLDPWD: string;
 	export const TERM_PROGRAM: string;
-	export const NODE_ENV: string;
 }
 
 /**
@@ -138,7 +136,6 @@ declare module '$env/dynamic/private' {
 		VITE_CLIENT_SECRET: string;
 		VITE_REDIRECT_URI: string;
 		SHELL: string;
-		npm_command: string;
 		SESSION_MANAGER: string;
 		COLORTERM: string;
 		XDG_CONFIG_DIRS: string;
@@ -157,6 +154,7 @@ declare module '$env/dynamic/private' {
 		XDG_SESSION_DESKTOP: string;
 		LOGNAME: string;
 		XDG_SESSION_TYPE: string;
+		BUN_WHICH_IGNORE_CWD: string;
 		SYSTEMD_EXEC_PID: string;
 		_: string;
 		XAUTHORITY: string;
@@ -173,9 +171,9 @@ declare module '$env/dynamic/private' {
 		XDG_SEAT_PATH: string;
 		INVOCATION_ID: string;
 		MANAGERPID: string;
+		INIT_CWD: string;
 		CHROME_DESKTOP: string;
 		KDE_SESSION_UID: string;
-		npm_lifecycle_script: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		XDG_SESSION_CLASS: string;
 		TERM: string;
@@ -186,7 +184,6 @@ declare module '$env/dynamic/private' {
 		KDE_SESSION_VERSION: string;
 		PAM_KWALLET5_LOGIN: string;
 		DISPLAY: string;
-		npm_lifecycle_event: string;
 		SHLVL: string;
 		XDG_VTNR: string;
 		XDG_SESSION_ID: string;
@@ -210,7 +207,6 @@ declare module '$env/dynamic/private' {
 		npm_node_execpath: string;
 		OLDPWD: string;
 		TERM_PROGRAM: string;
-		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
