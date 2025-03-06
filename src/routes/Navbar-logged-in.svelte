@@ -49,7 +49,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #a86629;
+        background-color: #4e3014;
         min-width: 160px;
         box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
         z-index: 1;
