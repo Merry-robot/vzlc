@@ -125,8 +125,9 @@ export {
   setContext as j,
   pop as k,
   getContext as l,
-  safe_not_equal as m,
+  current_component as m,
   noop as n,
+  safe_not_equal as o,
   push as p,
   run_all as r,
   safe_equals as s

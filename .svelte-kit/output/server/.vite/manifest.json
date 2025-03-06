@@ -8,6 +8,15 @@
       "_internal.js"
     ]
   },
+  "_client.js": {
+    "file": "chunks/client.js",
+    "name": "client",
+    "imports": [
+      "_exports.js",
+      "_index.js",
+      "_index2.js"
+    ]
+  },
   "_escaping.js": {
     "file": "chunks/escaping.js",
     "name": "escaping"
@@ -42,8 +51,7 @@
     "imports": [
       "_escaping.js",
       "_index2.js",
-      "_exports.js",
-      "_index.js"
+      "_client.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
@@ -67,7 +75,7 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "css": [
-      "_app/immutable/assets/_layout.CXBOnznu.css"
+      "_app/immutable/assets/_layout.TzOuIhr3.css"
     ]
   },
   "src/routes/+page.svelte": {
@@ -81,10 +89,20 @@
       "_escaping.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.DpN5orJe.css"
+      "_app/immutable/assets/_page.CcRlErgS.css"
     ],
     "assets": [
       "_app/immutable/assets/logo.Bb0tbaBR.png"
+    ]
+  },
+  "src/routes/callback/+page.svelte": {
+    "file": "entries/pages/callback/_page.svelte.js",
+    "name": "entries/pages/callback/_page.svelte",
+    "src": "src/routes/callback/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_client.js"
     ]
   }
 }

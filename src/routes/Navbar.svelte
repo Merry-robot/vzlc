@@ -52,6 +52,6 @@
         <a href="/">Home</a>
         <a href="/feedback">Feedback</a>
         <a href="/facility">Facility</a>
-        <a href="/" on:click={login}>Login</a>
+        <a href="/callback/" on:click={login}>Login</a>
     </div>  
 </nav>
